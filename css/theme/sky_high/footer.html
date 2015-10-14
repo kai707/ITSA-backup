@@ -1,0 +1,35 @@
+<?php
+      if ($navigation) { // If we are in a course, show the menu at the bottom of the page ?>
+    <div class="navbar clearfix">
+                <div class="headermenu"><?php echo $menu ?></div>
+    </div>
+<?php } else if ($heading) { // Otherwise print a line ?>
+<?php } ?>
+
+<?php
+
+    print_container_end(); // content container
+    echo '<div id="footerwrap">';
+    print_container_start(false, '', 'footer');
+?>
+
+	<div id="footnav"></div>
+
+	<div class="copyright">
+		<div>Theme created by <a href="http://moodleman.net">Moodleman</a>.</div>
+		<?php echo $loggedinas; ?><br>
+	</div>
+
+	<div class="cert">
+		
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" title="Our site is valid CSS" style="text-decoration: none;"><img src="<?php echo $CFG->themewww .'/'. current_theme() ?>/pix/but-css.gif" border="none" alt="Our site is valid CSS" /></a>
+	
+	<a href="http://validator.w3.org/check/referer" target="_blank" title="Our site is valid XHTML 1.0 Transitional" style="text-decoration: none;"><img src="<?php echo $CFG->themewww .'/'. current_theme() ?>/pix/but-xhtml10.gif" border="none" alt="Our site is valid XHTML 1.0 Transitional" /></a>
+
+	<?php
+    print_container_end();
+    echo '</div>';
+?>
+</div>
+</body>
+</html>

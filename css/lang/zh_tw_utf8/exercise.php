@@ -1,0 +1,196 @@
+<?PHP // $Id: exercise.php,v 1.6 2009/01/21 06:40:46 kiang Exp $ 
+      // exercise.php - created with Moodle 1.8.2+ (2007021520) by Eric Hsin
+
+
+$string['absent'] = '缺席';
+$string['accumulative'] = '累積';
+$string['action'] = '活動';
+$string['ago'] = '$a 之前';
+$string['amend'] = '修訂';
+$string['amendassessmentelements'] = '修訂';
+$string['amendtitle'] = '修訂標題';
+$string['analysis'] = '分析';
+$string['assess'] = '評量';
+$string['assessed'] = '已評量';
+$string['assessment'] = '評鑑';
+$string['assessmentby'] = '由$a 評鑑';
+$string['assessmentform'] = '評鑑者';
+$string['assessmentmadebythe'] = '由$a做的評鑑';
+$string['assessmentofthissubmission'] = '本次回應的評量';
+$string['assessments'] = '評鑑';
+$string['atthisstageyou'] = '在這個階段您已完成評鑑.<br />您可能想要修訂您的作業,.<br />如果作業被修訂過請記得同時修訂評鑑.<br />您可以點選下面的\"重新評分\"連結';
+$string['awaitingassessmentbythe'] = '$a等待中的評鑑';
+$string['clearlateflag'] = '清除最新flag';
+$string['comment'] = '評語';
+$string['comparisonofassessments'] = '評鑑比對';
+$string['confirmdeletionofthisitem'] = '確認本則$a 刪除';
+$string['correct'] = '正確';
+$string['count'] = '計數';
+$string['criterion'] = '準則';
+$string['deadline'] = '最後期限';
+$string['deadlineis'] = '最後期限是$a';
+$string['delete'] = '刪除';
+$string['deletesubmissionwarning'] = '警告:有$a個與這個作業相關的評鑑..<br />';
+$string['deleting'] = '刪除中';
+$string['description'] = '說明';
+$string['descriptionofexercise'] = '在作業評鑑中，由$a對作業或練習所做的評述，存成Word文件或HTML檔案中。這個檔案在$a打開來之前就上傳到作業區。在同一個作業或練習中，在$a打開來之前，有可能建立一些不同型態的檔案，如同Word文件或HTML檔案一般。';
+$string['detailsofassessment'] = '評鑑內容';
+$string['displayoffinalgrades'] = '顯示最後成績';
+$string['doubleupload'] = '注意:本則文章可能上傳二次,請到系統管理選單,檢查此使用者在極短時間內的張貼,刪除其中一則.';
+$string['duedate'] = '到期日';
+$string['edit'] = '編輯';
+$string['editingassessmentelements'] = '編輯評分向度';
+$string['element'] = '評分向度';
+$string['elementweight'] = '評分向度加權';
+$string['enterpassword'] = '輸入密碼';
+$string['entriessaved'] = '文章已儲存';
+$string['errorbanded'] = '錯誤';
+$string['excellent'] = '優秀';
+$string['exercise:assess'] = '活動評鑑';
+$string['exerciseassessments'] = '活動評鑑';
+$string['exercisefeedback'] = '活動回饋';
+$string['exercisesubmissions'] = '上傳的作業';
+$string['fair'] = '普通';
+$string['generalcomment'] = '一般評語';
+$string['good'] = '良好';
+$string['gradeassessment'] = '評分';
+$string['gradeforassessment'] = '評分';
+$string['gradeforstudentsassessment'] = '評$a 的分數';
+$string['gradeforsubmission'] = '評分';
+$string['gradetable'] = '計分表';
+$string['gradinggrade'] = '評分等第';
+$string['gradingstrategy'] = '評分策略';
+$string['handlingofmultiplesubmissions'] = '大量處理';
+$string['hidenamesfromstudents'] = '隱藏學生姓名';
+$string['incorrect'] = '錯誤';
+$string['late'] = '遲交';
+$string['lax'] = '寬鬆';
+$string['leaguetable'] = '已繳交作業的成績記錄表';
+$string['mail1'] = '您的作業\'$a\' 已經被評分';
+$string['mail2'] = '此評語和分數可以在指定作業\'$a\'看到';
+$string['mail3'] = '您可以在作業區看到成績';
+$string['mail6'] = '已經看過作業\'$a\'中您給的評分';
+$string['mail7'] = '$a給的評語可以在作業區中看到。';
+$string['managingassignment'] = '管理活動';
+$string['maximum'] = '最大值';
+$string['maximumgradeforstudentassessments'] = '給學生的最大級分是:$a';
+$string['maximumgradeforsubmissions'] = '給作業的最大級分是:$a';
+$string['maximumsize'] = '最大值';
+$string['mean'] = '平均值';
+$string['minimum'] = '最小值';
+$string['modulename'] = '活動';
+$string['modulenameplural'] = '活動';
+$string['movingtophase'] = '轉移到$a階段';
+$string['multiplesubmissions'] = '多重作業';
+$string['noexercisedescriptionssubmitted'] = '沒有活動說明';
+$string['nosubmissions'] = '沒有作業';
+$string['notassessedyet'] = '尚未評分';
+$string['notavailable'] = '尚未啟用';
+$string['noteonassessmentelements'] = '提醒您，評分是以一些\'評分元素\'來做成的。
+<br/>這可以讓評分更容易而且更一致。身為一個教師，您必須<br/>在學生看到這個作業之前，加入這些元素。這個動作經由<br/>按下課程中的作業完成，如果沒有元素存在，系統會要求
+<br/>您將它們加入。您可以使用編輯作業畫面來改變元素的數
+<br/>量，或是由\"作業管理\"畫面來修改。';
+$string['noteongradinggrade'] = '這個分數是衡量您對$a對您的作業所作的評分的認同程度有多高。分數愈高就代表認同度愈近。';
+$string['noteonstudentassessments'] = '學生評分/教師評分';
+$string['notgraded'] = '尚未評分';
+$string['notitlegiven'] = '無標題';
+$string['numberofassessmentelements'] = '評論數字，評分元素，分數範圍，評語或等第';
+$string['numberofcriterionelements'] = '評分元素的數字必須大於一。';
+$string['numberofentries'] = '文章數';
+$string['numberofentriesinleaguetable'] = '成績記錄表文章數';
+$string['numberofnegativeresponses'] = '負面回應數';
+$string['onesubmission'] = '單一作業';
+$string['optionaladjustment'] = '選項調整';
+$string['overallgrade'] = '整體分數';
+$string['passwordprotectedexercise'] = '密碼保護的活動';
+$string['phase'] = '階段';
+$string['phase1'] = '設定活動';
+$string['phase1short'] = '設定';
+$string['phase2'] = '允許$a 上傳和評分';
+$string['phase2short'] = '開啟';
+$string['phase3'] = '顯示總分';
+$string['phase3short'] = '顯示';
+$string['pleasegradetheassessment'] = '請給$a對這個作業評分打分數';
+$string['pleasemakeyourownassessment'] = '請給$a的作業做您自己的評分。
+<br/>提醒您，評分表預設會和學生的評分一起顯示。
+<br/>您應該做出任何您認為必要的調整，然後按下在網頁下方的其中一個按鈕。';
+$string['pleasesubmityourwork'] = '請用這個表單上傳您的作業';
+$string['pleaseusethisform'] = '當您完成下列在練習中的指令後，請完成這個表格。';
+$string['pleaseviewtheexercise'] = '請按一下標題，看下面的練習。
+<br />您必須遵從這個練習的指令。
+<br />當您很高興您成功地完成了這個練習後，您必須按一下下方的「評分」或「再新評分」連結。當您完成這個評量，您將會看到進一步的指令來繳交您的作業。';
+$string['poor'] = '差';
+$string['present'] = '目前的';
+$string['reasonforadjustment'] = '調整原因';
+$string['reassess'] = '重新評分';
+$string['regradestudentassessments'] = '重新評量學生評分';
+$string['resubmissionfor'] = '$a重新上傳';
+$string['resubmitnote'] = '*意即$a可以重新繳交作業。
+<br />這個標織可以，經由重新評量並按下\"允許$a重新繳<br />交\"按鈕，在任何作業中出現。學生可以在<b>任何</b>現
+<br />這個標織的作業中重新繳交作業。';
+$string['rubric'] = '修訂文字';
+$string['savedok'] = '儲存完成';
+$string['saveentries'] = '儲存文章';
+$string['savemyassessment'] = '儲存我的評鑑';
+$string['saveweights'] = '儲存加權';
+$string['scale10'] = '10分量表';
+$string['scale100'] = '100分量表';
+$string['scale20'] = '20分量表';
+$string['scalecorrect'] = '2 點 正/誤 量表';
+$string['scaleexcellent4'] = '4 點 優/劣 量表';
+$string['scaleexcellent5'] = '5 點 優/劣 量表';
+$string['scaleexcellent7'] = '7 點 優/劣 量表';
+$string['scalegood3'] = '3 點 優/劣 量表';
+$string['scalepresent'] = '2點 出席/缺席 量表';
+$string['scaleyes'] = '2 點 是/非 量表';
+$string['specimenassessmentform'] = '評分樣本';
+$string['standarddeviation'] = '標準差';
+$string['strict'] = '嚴格';
+$string['studentallowedtoresubmit'] = '$a 允許重複交作業';
+$string['studentassessments'] = '$a 評分';
+$string['studentnotallowed'] = '$a 不允許(或不需要)重複交作業';
+$string['studentsubmissions'] = '$a繳交的作業';
+$string['studentsubmissionsforassessment'] = '$a學生所繳交的待評量作業';
+$string['submission'] = '作業';
+$string['submissions'] = '作業';
+$string['submissionsnowclosed'] = '繳交停止-繳交期限已過';
+$string['submitexercisedescription'] = '送出練習描述';
+$string['submitted'] = '上傳';
+$string['submittedby'] = '上傳者';
+$string['suggestedgrade'] = '建議分數';
+$string['teacherassessment'] = '$a 評鑑';
+$string['teacherassessmenttable'] = '$a 評分表';
+$string['teacherscomment'] = '教師評語';
+$string['theexercise'] = '活動';
+$string['theexerciseandthesubmissionby'] = '$a的作業及練習';
+$string['thegradeis'] = '分數為 $a';
+$string['thereisfeedbackfromthe'] = '由 $a 給的回饋是:';
+$string['thisisaresubmission'] = '$a重新繳交的。
+<br />您之前給予他們先前繳交的作業的評分會顯示。
+<br />看過新繳交的作業後，請修改您這個評分，
+<br />並按在網頁下方的其中一個按鈕。';
+$string['title'] = '標題';
+$string['typeofscale'] = '量尺型態';
+$string['unassessed'] = '$a未評分';
+$string['ungradedstudentassessments'] = '$a未評學生評分';
+$string['usemaximum'] = '使用最大值';
+$string['usemean'] = '使用平均值';
+$string['usepassword'] = '使用密碼';
+$string['verylax'] = '非常寬鬆';
+$string['verypoor'] = '極差';
+$string['verystrict'] = '非常嚴格';
+$string['view'] = '檢視';
+$string['viewteacherassessment'] = '檢視 $a 評鑑';
+$string['warningonamendingelements'] = '警告:有上傳的評鑑資料 <br />請不要變更評鑑要素的數量和權值';
+$string['weightederrorcount'] = '加權錯誤計數: $a';
+$string['weightforgradingofassessments'] = '對於評鑑的評分的加權';
+$string['weightforteacherassessments'] = '$a 作業的加權';
+$string['weights'] = '加權';
+$string['weightssaved'] = '儲存加權';
+$string['weightsusedforoverallgrade'] = '整體分數使用的加權';
+$string['wrongpassword'] = '密碼錯誤';
+$string['yourassessment'] = '您的評分';
+$string['yourfeedbackgoeshere'] = '您的回饋';
+$string['yoursubmission'] = '您的作業';
+
+?>

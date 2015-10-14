@@ -1,0 +1,368 @@
+html {
+overflow-y: scroll; /*workaround to stop un-needed horiz scrollbar in IE within frame*/	
+scrollbar-face-color: #F1F1DF;
+height: 100.02%;/*workaround to force display of vertical scrollbar in Mozilla at all times*/
+}
+
+body {
+padding-top: 0;
+/*Multi-coloured arrow background*/
+background:#5AD9F0 url('custompix/background.png') no-repeat;
+font-family: Helvetica,Verdana,Arial,sans-serif;
+margin: 0;
+}
+
+#layout-table {
+border-collapse: collapse !important;
+width: 100%;
+}
+
+/*Background Images*/
+/*No Columns - All Other Page Backgrounds, Activities, Course Admin Pages, Profile*/
+#middle-column {
+background: url('custompix/middlebackground.png') repeat-x;
+padding-top:4px;
+}
+/*Two Columns - Front Page and Course Page Background*/
+#site-index #content, #course-view #content {
+background: none;
+}
+#site-index #middle-column, #course-view #middle-column{
+background: url('custompix/middlebackground.png') repeat-x;
+padding-top: 4px;
+}
+
+/*Overall padding*/
+#content {
+padding: 10px;
+padding-bottom: 50px;
+}
+
+/*Form Elements CSS*/
+.mform fieldset legend {
+background: #fff;
+border-top: 1px solid #77c21d;
+border-left: 1px solid #77c21d;
+border-right: 1px solid #77c21d;
+padding: 4px;
+}
+.mform fieldset {
+border-color:#77c21d;
+background: #fff;
+}
+
+/*Links*/
+a:link {
+color: #fe8b00;
+}
+a:hover {
+color: #fe8b00;
+}
+a:visited {
+color: #fe8b00;
+}
+/*Home link removed from footer of all pages*/
+.homelink {
+display: none;
+}
+
+/*Header*/
+#header-home {
+height: 60px;
+margin: 0;
+padding: 0;
+padding-bottom: 10px;
+font: bold 14px arial;
+color: #fff;
+}
+#header {
+height: 60px;
+margin: 0;
+padding: 0;
+padding-bottom: 10px;
+font: bold 14px arial;
+color: #fff;
+}
+.headermenu {
+width: 400px;
+}
+.headermain, h1.headermain {
+text-align: right;
+float: right;
+}
+.navbar {
+margin-bottom: 10px;
+background: url('custompix/navbar.png') repeat-x bottom;
+border: 0; 
+height: 33px;
+}
+.navbar .breadcrumb {
+padding-top: 9px;
+}
+
+/*Profile Pages*/
+.userinfobox .side {
+background: #fff;
+border-top: 1px solid #77C21D;
+border-left: 1px solid #77C21D;
+border-bottom: 1px solid #77C21D;
+}
+.userinfobox .content {
+background: #fff;
+border-top: 1px solid #77C21D;
+border-right: 1px solid #77C21D;
+border-bottom: 1px solid #77C21D;
+}
+#course-user .section {
+background: #fff;
+border: 1px solid #77C21D;
+}
+
+/*Turn editing on button in navrbar*/
+.navbar .navbutton {
+margin-top: 8px;
+}
+
+/*Login Box*/
+.loginbox {
+background: #fff;
+border: 1px solid #77C21D;
+}
+
+/*Some general styling and frontpage settings*/
+.generalbox {
+border: 1px solid #77C21D;
+background: #fff;
+}
+.generalbox.sitetopic {
+border: 0;
+background: none;
+}
+.categorybox {
+border: 1px solid #77C21D;
+background: #fff;
+padding: 10px;
+}
+.coursebox {
+border: 0;
+border: 1px solid #77C21D;
+background: #fff;
+}
+.coursebox .summary {
+float: none;
+}
+.coursebox ul {
+list-style: none;
+margin-left: 0;
+padding-left: 0;
+}
+.headingblock {
+background: url('custompix/headingblock.png') no-repeat top left;
+height: 50px;
+border: 0;
+padding: 0;
+margin-right: 20px;
+}
+.headingblock, h2.headingblock {
+border: 0;
+color: #fff;
+}
+
+/*Blocks*/
+.sideblock .header {
+background:url('custompix/defaultblocktop.png') no-repeat;
+border: 0;
+width: 201px;
+}
+.sideblock .header .commands {
+background:url('custompix/commands.png') no-repeat top right;
+border: 0;
+width: 210px;
+margin-left: -4px;
+margin-bottom: -4px;
+height: 20px;
+}
+#left-column .hidden .header, #right-column .hidden .header {
+border: 0;
+}
+.sideblock .header .hide-show-image {
+margin-right: 3px;
+margin-top: 4px;
+}
+.sideblock h2 {
+height: 30px;
+display: hidden;
+border: 0;
+font-family: Verdana;
+color: #E41B5B;
+font-size: 12pt;
+padding-top: 15px;
+}
+.sideblock .content {
+border: 0;
+background:url('custompix/defaultblockcontent.png') no-repeat bottom left;
+padding-bottom: 10px;
+width: 202px;
+}
+#left-column, #right-column{
+width:230px;
+width:230px !important;
+border-collapse: collapse !important;
+}
+#left-column {
+background: url('custompix/leftbackground.png') no-repeat top right;
+padding-left: 25px;
+width: 230px;
+}
+#right-column {
+background: url('custompix/rightbackground.png') no-repeat top left;
+padding-left: 25px;
+width: 220px;
+}
+.sideblock {
+width: 230px;
+}
+
+/*Course*/
+#course-view .section td.side {
+padding: 0;
+padding-top: 5px;
+}
+#course-view .section td.left {
+width: 1px;
+background: none;
+}
+#course-view .weekscss .section, #course-view .section td.side {
+background: none;
+}
+#course-view .section td.side, #course-view .section td.content  {
+border-color:#77c21d;
+}
+
+/*The message which gets displyed when you add/edit a forum post*/
+#redirect #message {
+border: 1px solid #77C21D;
+background: #fff;
+margin-bottom: 10px;
+}
+
+/*Forum CSS*/
+.forumheaderlist td {
+background: #fff;
+}
+.forumheaderlist .discussion .starter {
+background: #fff;
+text-align: center;
+}
+th.header, td.header {
+background: #fff;
+}
+
+/*Calendar CSS*/
+#calendar .sidecalendar {
+width: 230px;
+}
+#calendar .maincalendar{
+border: 1px solid #77C21D;
+background: #fff;
+}
+#calendar .sidecalendar{
+border: 1px solid #77C21D;
+}
+#calendar td.sidecalendar .sideblock {
+border-color: #77C21D;
+background: #fff;
+}
+.sidecalendar .header {
+background: none;
+}
+#calendar .maincalendar .filters table, #calendar .sidecalendar .filters table, .block_calendar_month .filters table {
+background: none;
+border: 1px solid #77C21D;
+}
+table.minicalendar {
+border-color: #77C21D;
+}
+
+/*Messaging CSS*/
+#message-index #personsearch {
+background: #fff;
+border: 1px solid #77C21D;
+padding-bottom: 10px;
+}
+#message-index .heading, #message-index .note {
+background: #fff;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#message-index .heading {
+border-top: 1px solid #77C21D;
+border-left: 1px solid #77C21D;
+border-right: 1px solid #77C21D;
+}
+#message-index .note {
+border-bottom: 1px solid #77C21D;
+border-left: 1px solid #77C21D;
+border-right: 1px solid #77C21D;
+}
+#message-index .mdl-align {
+background: #fff;
+padding: 10px;
+}
+#message-index #footer {
+display: none;
+}
+#message-index #message_settings {
+background: #fff;
+padding: 10px;
+border: 1px solid #77C21D;
+}
+#message-send .form-textarea {
+border: 1px solid #77C21D;
+margin-top: 4px;
+}
+#message-user .name, #message-user .commands {
+background: #fff;
+padding: 2px;
+margin-right: 10px;
+margin-left: 10px;
+}
+#message-user .name {
+border-top: 1px solid #77C21D;
+border-left: 1px solid #77C21D;
+border-right:1px solid #77C21D;
+}
+#message-user .commands {
+border-bottom: 1px solid #77C21D;
+border-left: 1px solid #77C21D;
+border-right:1px solid #77C21D;
+}
+.message .noframesjslink {
+background: #fff;
+border: 1px solid #77C21D;
+margin-right: 10px;
+margin-left: 10px;
+padding: 2px;
+}
+#message-messages {
+background: #fff;
+}
+
+/*Footer CSS*/
+#bottom { /*The little pencil - Uncomment the line below to remove*/
+/*display: none;*/ 
+position:fixed;
+bottom:1px;
+left:0px;
+right: 1px;
+width: 100%;
+background: url('custompix/bottom.png') no-repeat right;
+text-align: center;
+}
+#footer {
+background:url('custompix/footer.png') no-repeat;
+height: 180px;
+padding-top: 8px;
+margin: 0 auto;
+width: 830px;
+}

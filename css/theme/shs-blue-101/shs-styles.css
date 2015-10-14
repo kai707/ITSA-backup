@@ -1,0 +1,164 @@
+body {
+	background-color: #ccc;
+	color: #333;
+}
+
+#page {
+	background-color: #fff;
+	width: 90%;
+	margin: auto;
+	padding: 0.2em;
+	border: 2px ridge #525252;
+}
+
+body, table, td, th, li {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideblock .header {
+	background-color: #0075BB;
+	border-bottom: 1px groove #CCC;
+	color: #fff;
+}
+
+.coursebox, .generalbox {
+	background-color: #fff;
+}
+
+.content {
+	background-color: #fff;
+}
+
+#content {
+	clear: left;
+}
+
+.navbar {
+	clear: left;
+}
+
+.headingblock {
+	background-color: #fff;
+}
+
+.header-logo {
+	float: left;
+}
+
+.headermain {
+	color: #0075BB;
+}
+
+#header-home, #header {
+	background-image: url(pix/panorama.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 110px;
+}
+
+/* New Navigation Bar Style */
+
+#main-nav {
+	padding: 0;
+	margin: 4px 0px 4px 0px;
+	margin: 0;
+	background-color: #0075BB;
+	height: 1.8em;
+	font-size: 0.8em;
+}
+
+#main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main-nav li {
+	float: left;
+	position: relative;
+	width: 10em;
+	height: 1.5em;
+	text-align: center;
+	color: #fff;
+	border-right: #CCC groove 2px;
+	border-bottom: #CCC groove 2px;
+	background-color: #0075BB;
+	padding-top: 0.25em;
+}
+
+#main-nav li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+#main-nav li ul {
+	display: none;
+	position: absolute;
+	top: 1.9em;
+	left: 0;
+	z-index: 999;
+}
+
+#main-nav li:hover {
+	background-color: #2393D7;
+	color: #000;
+}
+
+#main-nav li a:hover {
+	color: #000;
+}
+
+#main-nav li:hover ul, #main-nav li.over ul {
+	display: block;
+}
+
+#main-nav li ul li {
+	background-color: #0075BB;
+}
+
+#main-nav li ul li a {
+	display: block;
+}
+
+/* Forum Styles */
+
+.forumpost {
+	border: none;
+	font-size: 0.85em;
+}
+
+.forumpost .left {
+	padding-right: 30px;
+}
+
+.forumpost .starter {
+	background-color: #FFF;
+}
+
+.forumpost .content {
+	/* -moz-border-radius-bottomleft: 20px; */
+	border-right: #000 solid 1px;
+	border-bottom: #000 solid 1px;
+	border-left: #ffffd8 solid 1px;
+	padding: 1em 1em 1em 2em;
+	background-color: #ffffd8;
+}
+
+.forumpost .topic {
+	border-bottom: none;
+	border-top: #000 solid 1px;
+	-moz-border-radius-topright: 20px;
+	border-right: #000 solid 1px;
+	border-left: #ffffd8 solid 1px;
+	padding: 1em;
+	background-color: #ffffd8;
+}
+
+.forumpost .side {
+	background: #FFF url(pix/speech_side.gif) no-repeat scroll 100% 100%;
+}
+
+.forumpost .picture {
+	background: #FFF url(pix/speech_top.gif) no-repeat scroll 100% 0;
+}

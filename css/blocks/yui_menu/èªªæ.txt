@@ -1,0 +1,16 @@
+【推薦 課程導覽選單：YUI Course Menu】
+【來源】 YUI course menu http://moodle.org/mod/data/view.php?d=13&rid=915
+【類型】區塊 (解壓縮後，請放在 /moodle/blocks/目錄下)
+【適合版本】1.8版以上
+【本站優化】
+
+  [注意]安裝前請先移除舊的 Course Menu
+   1. (1.9後的版本不需要做此項目)中文翻譯(請將 lang/zh_tw_utf8/block_yui_menu.php 檔案複製到中文語言目錄中 moodledata/lang/zh_tw_utf8/)
+   2. 修改程式，避免中文字被截斷成為亂碼字
+   3. 優化後包裝如附件。
+   4.(感謝Shaojung提供)修改中文字截斷的部分, 將中文字截斷改為利用 mb_substr 這個函數, 可以判斷正確的中文字結尾並且截斷
+   5.(感謝Joann提供)大綱的顯示出來的解決方法-->echo require_js(array('yui_yahoo','yui_event','yui_dom-event', 'yui_treeview'));
+   6.修改1.9版時空白主題會亂碼 ，停用ucwords函數
+
+---------------------------------------------------
+by Eric Hsin 辛文義 (http://moodle.club.tw)

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html<?php echo $direction ?>>
+<head>
+    <?php echo $meta ?>
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title><?php echo $title ?></title>
+    <!--Navigation Style-->
+    <link rel="stylesheet" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/custommenu/lavalamp.css" type="text/css" media="screen">
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+    <?php include("$CFG->javascript"); ?>
+    <!--Navigation Javascript End-->
+
+</head>
+
+<body<?php
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>>
+
+<div id="page">
+
+<?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+      if ($home) {  // This is what gets printed on the home page only
+?>
+
+<?php print_container_start(true, '', 'header-home'); ?>
+<div id="navwrapper">
+<ul class="lavaLampWithImage" id="1">
+		<li class="current"><a href="<?php echo $CFG->wwwroot.'/' ?>">Home</a></li>
+    <li><a href="<?php echo $CFG->wwwroot.'/course' ?>">Courses</a></li>
+	<h1 class="headermain"><img src="http://140.118.170.113/css-moodle/theme/junction/custommenu/css.gif"></h1>
+</ul>
+</div>
+<?php print_container_end(); ?>
+
+
+<?php } else if ($heading) {  // This is what gets printed on any other page with a heading
+?>
+    <?php print_container_start(true, '', 'header'); ?>
+<div id="navwrapper">
+<ul class="lavaLampWithImage" id="1">
+    <li class="current"><a href="<?php echo $CFG->wwwroot.'/' ?>">Home</a></li>
+    <li><a href="<?php echo $CFG->wwwroot.'/course' ?>">Courses</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="<?php echo $CFG->wwwroot.'/login' ?>">Login</a></li>
+<h1 class="headermain"><?php echo $heading ?></h1>
+</ul>
+</div>
+    <?php print_container_end(); ?>
+<?php } ?>
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+      if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php print_navigation($navigation); ?></div>
+        <div class="navbutton"><?php echo $button; ?></div>
+    </div>
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line
+?>
+
+<?php } ?>
+
+<div id="bottom">&nbsp;</div>
+
+<div id="shrinkwrapper">
+
+
+    <!-- END OF HEADER -->
+    <?php print_container_start(false, '', 'content'); ?>

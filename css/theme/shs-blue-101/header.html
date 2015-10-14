@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html<?php echo $direction ?>>
+<head>
+    <?php echo $meta ?>
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title><?php echo $title ?></title>
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+    <!--[if lt IE 7]><script language="javascript" type="text/javascript" src="<?php echo $CFG->themewww . '/' . current_theme() ?>/ie-drop.js"></script><![endif]-->
+    <?php include("$CFG->javascript"); ?>
+</head>
+
+<body<?php
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>>
+
+<div id="page">
+
+<?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+    if ($home) { // this is what gets printed on the home page only
+?>
+    <?php print_container_start(true, '', 'header-home'); ?>
+        <img src="<?php echo $CFG->themewww . '/' . current_theme() ?>/pix/logosmall.jpg" alt="School Logo" class="header-logo" />
+        <h1 class="headermain"><?php echo $heading ?></h1>
+        <div class="headermenu"><?php echo $menu ?></div>       
+	<?php print_container_end(); ?>
+        <div id="main-nav"><ul id="dd-nav">
+                               <li><a href="<?php echo $CFG->wwwroot; ?>">Home</a>
+                                   <ul>
+                                       <li><a href="<?php echo $CFG->wwwroot . '/mod/forum/view.php?id=10311'; ?>">Site News</a></li>
+                                       <li><a href="<?php echo $CFG->wwwroot . '/course/index.php'; ?>">Course Finder</a></li>
+                                       <li><a href="<?php echo $CFG->wwwroot . '/my/'; ?>">My Courses</a></li>
+                                   </ul>
+                               </li>
+                               <li>School Information
+                                   <ul>
+                                       <li><a href="http://www.shs.eriding.net">School Website</a></li>
+                                       <li><a href="http://shunsley.eriding.net/calendar">School Calendar</a></li>
+                                       <li><a href="http://shunsley.eriding.net/mrbs">Room Bookings</a></li>
+                                   </ul>
+                               </li>
+                               <li>School Email
+                                   <ul>
+                                       <li><a href="http://webmail.eril.net">Student Email</a></li>
+                                       <li><a href="https://mail.shs.eriding.net/exchange">Staff Email</a></li>
+                                  </ul>
+                              </li>
+                              <li>ICT Support
+                                  <ul>
+                                      <li><a href="http://shunsley.eriding.net/policy.html">ICT Policy</a></li>
+                                      <li><a href="http://docs.moodle.org/en/Main_Page">VLE Documentation</a></li>
+                                 </ul>
+                             </li>
+                          </ul></div>
+<?php } else if ($heading) {  // This is what gets printed on any other page with a heading
+?>
+    <?php print_container_start(true, '', 'header'); ?>
+        <img class="header-logo" alt="School Logo" src="<?php echo $CFG->themewww . '/' . current_theme(); ?>/pix/logosmall.jpg" />
+        <h1 class="headermain"><?php echo $heading ?></h1>
+        <div class="headermenu"><?php echo $menu ?></div>
+    <?php print_container_end(); ?>
+<?php } ?>
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+      if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php print_navigation($navigation); ?></div>
+        <div class="navbutton"><?php echo $button; ?></div>
+    </div>
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line
+?>
+        <!-- <hr /> -->
+<?php } ?>
+    <!-- END OF HEADER -->
+    <?php print_container_start(true, '', 'content'); ?>
+

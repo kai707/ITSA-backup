@@ -1,0 +1,453 @@
+/**
+  *  Adds all the nice finish to the standard theme
+  *
+  */
+
+/* @group Core */
+body
+{
+	color: #333;
+	background: url(pix/bg/body.jpg) top left repeat-x #dcecf9;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	margin: 0px;
+	font-size: .9em;
+	line-height: 150%;
+}
+
+a:link, a:visited
+{
+	color: #003466;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus
+{
+	color: #4785ac;
+	text-decoration: none;
+}
+
+#page {
+	background: #fff;
+}
+
+#content
+{
+	background: url(pix/top_bg.gif) repeat-x top #fff;
+	padding: 0px;
+	margin: 1em 2em;
+	line-height: 1.3em;
+	margin: 0px 0px 0px 0px;
+	border-top: 2px solid #fff;
+	border-left: 1px solid #98bcd6;
+	border-right: 1px solid #98bcd6;
+}
+
+#left-column
+{
+	padding-left: 10px;
+	padding-right: 5px;
+	background: #ebf6f9;
+	padding-top: 10px;
+	border-left: 5px solid #fff;
+}
+
+#right-column { 
+	padding-right: 10px; 
+	padding-left: 5px;
+	background: #ebf6f9;
+	padding-top: 10px;
+}
+
+#middle-column {
+	border-right: 2px solid #98bcd6;
+}
+
+.logininfo { font-size: 1em; }
+
+/* @end */
+/* @group Content */
+h2.headingblock
+{
+	border: 0px none;
+	border-bottom: 1px solid #98bcd6;
+	padding-bottom: 10px;
+	color: #336699;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+/* @end */
+/* @group Blocks */
+.sideblock
+{
+	border: 0px none;
+	width: 220px;
+}
+
+.sideblock .header
+{
+	border: 1px solid #ccc;
+	background: #fff;
+	padding-top: 3px;
+	margin-bottom: 0px;
+}
+
+.sideblock .header h2
+{
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	color: #336699;
+	font-size: 1.1em;
+}
+
+.sideblock .content
+{
+	background: #fff;
+	border: 1px solid #ccc;
+	border-top: 2px solid #e9e7e7;
+	padding: 10px;
+	margin-top: -2px;
+}
+
+.block_course_summary .content {
+	line-height: 1.5em;
+}
+/* @end */
+/* @group Header */
+th.header,
+td.header,
+div.header
+{
+	background: url(pix/grad3.gif) repeat-x bottom #f6f6f6;
+	padding: 5px;
+}
+
+#header .navbar,
+#header-home .navbar { 
+	background: #c7eafd;
+	border-top: 2px solid #006699;
+	border-bottom: 2px solid #006699;
+	border-left: 1px solid #98bcd6;
+	border-right: 1px solid #98bcd6;
+}
+
+.breadcrumb {
+	text-transform: uppercase;
+	font-weight: bold !important;
+	color: #666 !important;
+}
+
+.breadcrumb a {
+	color: #336699 !important;
+}
+
+#header,
+#header-home
+{
+	background: url(pix/bg/header.gif) top right no-repeat #9cdbfa;
+	height: 48px;
+	padding: 16px;
+	font-size: .98em;
+	border-bottom: 2px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+#header .logininfo,
+#header-home .logininfo
+{
+	color: #33ccff;
+	padding-top: 35px;
+	font-size: .9em;
+}
+
+#header .logininfo a,
+#header-home .logininfo a { color: #7ac142; }
+
+.menubar
+{
+	background: #663366;
+	width: auto;
+	padding-left: 31px;
+	padding-top: 1px;
+	border-bottom: 2px solid #006699;
+}
+
+h1.headermain
+{
+	color: #006699;
+	font-weight: normal;
+	font-size: 1.65em !important;
+}
+
+h1.summary
+{
+	color: #006699;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: .85em;
+	padding-top: 20px;
+}
+
+#layout-table {
+	margin-top: 0px;
+}
+
+/* @end */
+/* @group Footer */
+#footerwrap
+{
+	padding: 20px 0 30px;
+	clear: both;
+	background: url(pix/bg/footer.png) no-repeat top right #c7f0ff;
+	margin-top: 0px;
+	border: 1px solid #98bcd6;
+	border-top: 5px solid #98bcd6;
+}
+
+#footer
+{
+	margin-top: 0px;
+	color: #666666;
+	background: url(pix/vdot.gif) repeat-y 22% 0;
+	position: relative;
+	font-size: .85em;
+	text-align: left;
+}
+
+#footer .copyright
+{
+	clear: both;
+	display: block;
+	padding-left: 25%;
+	color: #666666;
+	font-style: normal;
+	font-size: 92%;
+}
+
+#footnav { padding-left: 25%; }
+
+#footer ul
+{
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+#footer li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	background: none;
+}
+
+#footer li a
+{
+	padding: 0 15px 0 0;
+	display: inline;
+	color: #666666;
+	font-weight: bold;
+	font-size: 92%;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#footer li a:hover, #footer li a:active, #footer li a:focus
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+.cert
+{
+	font-size: 92%;
+	position: absolute;
+	right: 0;
+	top: 18px;
+	padding-right: 20px;
+}
+
+.cert a
+{
+	margin: 0 0 0 5px;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+.cert a span { display: none; }
+.cert a img { border: none; }
+
+.banneritem
+{
+	display: block;
+	margin-top: 15px;
+}
+
+.breadcrumb
+{
+	font-size: 0.85em;
+	padding-top: 1px;
+	font-weight: normal;
+}
+
+.headermenu
+{
+	font-size: 0.85em;
+	padding-top: 3px;
+}
+
+#footerwrap .navbar { 
+	background: #c7eafd;
+	border-top: 2px solid #006699;
+	border-bottom: 2px solid #006699;
+}
+
+/* @end */
+
+/* @group Fixes */
+
+.sideblock .content div.info {
+	text-align: left;
+}
+
+.block_online_users .info {
+	display: none;
+}
+
+.block_online_users .content .user,
+.block_online_users .content .listentry {
+	font-size: 1em !important;
+}
+
+.block_news_items .newlink {
+	text-align: left;
+}
+
+.sideblock .info {
+	font-size: 1em;
+}
+
+.block_rss_client .link {
+	font-size: 1em;
+}
+
+.sideblock .content,
+.sideblock .footer {
+	text-align: left !important;
+}
+
+.coursebox {
+	border:  0px none;
+	border-bottom:  1px dashed #ccc;
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+
+.coursebox .summary {
+	float: left;
+	width: 100%;
+}
+
+.coursebox .name {
+	padding-left: 0px;
+}
+
+.coursebox .info {
+	padding-top: 0px;
+	width: 100%;
+}
+
+.tabrow0 a,
+.tabrow1 a {
+	color: #003466 !important;
+	font-size: 1em;
+}
+
+.tabrow0 a:hover,
+.tabrow1 a:hover {
+	color: #7ac142 !important;
+	text-decoration: none;
+}
+
+.tabrow1 .here a{
+	color: #000 !important;
+}
+
+.forumpost {
+	margin-bottom: 10px;
+}
+.forumpost .left {
+	background: #c7eafd;
+}
+
+.forumpost .topic {
+	border-bottom: 2px solid #94b9d3;
+	background: #d6e2f2;
+}
+
+body#mod-quiz-edit .generalbox tr{
+	border-bottom: 1px dashed #ccc;
+}
+
+body#message-user,
+body#message-messages {
+	background: #d9ebf9 !important;
+	margin: 0px;
+	padding: 0px;
+}
+
+body#message-send {
+	background: #90b8d2 !important;
+}
+
+body#mod-chat-gui_header_js-users {
+	background: #d9ebf9 !important;
+}
+
+body#mod-chat-gui_header_js-users #content {
+	background: #fff;
+	padding: 5px;
+	border: 1px dashed #ccc;
+}
+
+body#mod-chat-gui_header_js-chatinput {
+	margin:  0px;
+	padding: 2px;
+	background: #90b8d2;
+}
+/* @end */
+
+/* @group User */
+
+
+
+/* @end */
+
+.userinfobox img.userpicture {
+   background-image: url('pix/frame.jpg');
+   padding: 25px !important;
+   border: none !important;
+}
+
+.block_login_logout .logoutuserimg {
+   background-image: url('pix/frame.png');
+   border: none !important;
+   padding: 26px;
+   width: 150px;
+}
+
+img.userpicture,
+img.grouppicture {
+   background-color: #f9f9f9;
+   padding-left: 3px !important;
+   padding-right: 3px !important;
+   padding-top: 3px !important;
+   padding-bottom: 10px !important;
+   border: 1px solid #ddd;
+   border-bottom-color: #888;
+   border-right-color: #888;
+}
